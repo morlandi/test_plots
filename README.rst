@@ -16,4 +16,5 @@ References
 
 - `Learning pandas by Exploring COVID-19 Data <https://www.fullstackpython.com/blog/learn-pandas-basic-commands-explore-covid-19-data.html>`_
 
+- `Pyplot tutorial <https://matplotlib.org/tutorials/introductory/pyplot.html>`_
 
