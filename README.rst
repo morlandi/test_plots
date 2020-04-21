@@ -29,6 +29,7 @@ Numpy
 
 Pandas
 
+- `The Pandas DataFrame: Make Working With Data Delightful <https://realpython.com/preview/pandas-dataframe/>`_
 - `Learning pandas by Exploring COVID-19 Data <https://www.fullstackpython.com/blog/learn-pandas-basic-commands-explore-covid-19-data.html>`_
 
 
