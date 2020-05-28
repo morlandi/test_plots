@@ -13,6 +13,7 @@ References
 Pyplot
 
 - `Pyplot tutorial <https://matplotlib.org/tutorials/introductory/pyplot.html>`_
+- `Python Plotting With Matplotlib (Guide) <https://realpython.com/python-matplotlib-guide/>`_
 
 Jupyter
 
