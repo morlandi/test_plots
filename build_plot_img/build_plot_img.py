@@ -1,6 +1,6 @@
 import os
 import csv
-from matplotlib import pyplot
+from matplotlib import pyplot as plt
 
 
 def chart_colors():
@@ -41,16 +41,23 @@ def build_plot_img(input_filename, output_filename):
     """
     data = _csv_to_plot_data(input_filename)
     x = data['x']
+    num_cols = len(data['columns'])
 
     # Scan columns
+    # for index, y in enumerate(data['columns']):
+    #     # add this column to chart
+    #     color = rgb_string_to_color_code(chart_color(index))
+    #     plt.plot(x, y, color, linewidth=1)
+
+    fig, axes = plt.subplots(nrows=1, ncols=1)
     for index, y in enumerate(data['columns']):
         # add this column to chart
         color = rgb_string_to_color_code(chart_color(index))
-        pyplot.plot(x, y, color, linewidth=1)
+        axes.plot(x, y, color, linewidth=1)
 
-    # pyplot.ylabel('some numbers')
-    pyplot.grid()
-    pyplot.savefig(output_filename)  # , dpi=600)
+    # plt.ylabel('some numbers')
+    plt.grid()
+    plt.savefig(output_filename)  # , dpi=600)
 
 
 # Helpers

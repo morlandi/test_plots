@@ -56,3 +56,7 @@ docs/_build
 .cache
 .sass-cache
 .DS_Store
+
+build_plot_img/*.png
+
+
