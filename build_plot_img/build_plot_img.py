@@ -1,5 +1,7 @@
 import os
 import csv
+import matplotlib
+import datetime
 from matplotlib import pyplot as plt
 
 
@@ -33,6 +35,13 @@ def rgb_string_to_color_code(rgb_string):
         color_code = '#000000'
     return color_code
 
+def format_x_time(seconds, x):
+    text = str(datetime.timedelta(seconds=seconds))
+    #remove leading "0:"
+    if text.startswith('0:'):
+        text = text[2:]
+    return text
+
 
 def build_plot_img(input_filename, output_filename):
     """
@@ -48,8 +57,9 @@ def build_plot_img(input_filename, output_filename):
     #     # add this column to chart
     #     color = rgb_string_to_color_code(chart_color(index))
     #     plt.plot(x, y, color, linewidth=1)
-
-    fig, axes = plt.subplots(nrows=1, ncols=1)
+    formatter = matplotlib.ticker.FuncFormatter(format_x_time)
+    fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(8,3), dpi=72, tight_layout=True)
+    axes.xaxis.set_major_formatter(formatter)
     for index, y in enumerate(data['columns']):
         # add this column to chart
         color = rgb_string_to_color_code(chart_color(index))
