@@ -30,6 +30,7 @@ Numpy
 
 Pandas
 
+- `NumPy and Pandas difference: Tutorial – Data Analysis with Python <https://cloudxlab.com/blog/numpy-pandas-introduction>`_
 - `The Pandas DataFrame: Make Working With Data Delightful <https://realpython.com/preview/pandas-dataframe/>`_
 - `Learning pandas by Exploring COVID-19 Data <https://www.fullstackpython.com/blog/learn-pandas-basic-commands-explore-covid-19-data.html>`_
 - `How can we download fundamentals data with Python? <http://theautomatic.net/2020/05/05/how-to-download-fundamentals-data-with-python/>`_
