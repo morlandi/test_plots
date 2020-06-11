@@ -43,7 +43,6 @@ Others
 Data sources
 
 - `Open Data di Arpae "Dati Arpae Emilia Romagna <https://arpae.datamb.it/>`_
-- `Qualità dell'Aria - Dati di monitoraggio  
-Catalogo dei dati storici e ultime rilevazioni in Web Service NRT (Near Real Time) sulla qualità dell'aria raccolti ed elaborati dalla rete di monitoraggio della regione Emilia-Romagna" <https://dati.arpae.it/dataset/qualita-dell-aria-rete-di-monitoraggio>`_
+- `Qualità dell'Aria - Dati di monitoraggio - Catalogo dei dati storici e ultime rilevazioni in Web Service NRT (Near Real Time) sulla qualità dell'aria raccolti ed elaborati dalla rete di monitoraggio della regione Emilia-Romagna" <https://dati.arpae.it/dataset/qualita-dell-aria-rete-di-monitoraggio>`_
 
 
