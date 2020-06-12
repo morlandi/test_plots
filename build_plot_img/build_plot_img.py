@@ -73,28 +73,53 @@ def build_plot_img(input_filename, output_filename):
 # Helpers
 def _csv_to_plot_data(filename):
 
-    # Collect rows from CSV input file
-    with open(filename) as csvfile:
-        reader = csv.reader(csvfile)
-        matrix = []
-        for i, row in enumerate(reader):
-            matrix.append(row)
+    # # Collect rows from CSV input file
+    # with open(filename) as csvfile:
+    #     reader = csv.reader(csvfile)
+    #     matrix = []
+    #     for i, row in enumerate(reader):
+    #         matrix.append(row)
+
+    # # Prepare "data" structure
+    # data = {
+    #     'labels': matrix[0],
+    #     'x': [],
+    #     'columns': [],
+    # }
+
+    # # Transpose matrix and feed "data"
+    # num_labels = len(data['labels'])
+    # for index in range(0, num_labels):
+    #     values = [float(row[index]) if i>0 else 0 for i, row in enumerate(matrix)][1:]
+    #     if index == 0:
+    #         data['x'] = values
+    #     else:
+    #         data['columns'].append(values)
 
     # Prepare "data" structure
+    num_labels = 0
     data = {
-        'labels': matrix[0],
+        'labels': [],
         'x': [],
         'columns': [],
     }
 
-    # Transpose matrix and feed "data"
-    num_labels = len(data['labels'])
-    for index in range(0, num_labels):
-        values = [float(row[index]) if i>0 else 0 for i, row in enumerate(matrix)][1:]
-        if index == 0:
-            data['x'] = values
-        else:
-            data['columns'].append(values)
+    # Collect rows from CSV input file
+    with open(filename) as csvfile:
+        reader = csv.reader(csvfile)
+        for i, row in enumerate(reader):
+            if i == 0:
+                data['labels'] = row
+                num_labels = len(row) - 1
+                for j in range(0, num_labels):
+                    data['columns'].append([])
+            else:
+                for j, item in enumerate(row):
+                    value = float(item)
+                    if j == 0:
+                        data['x'].append(value)
+                    else:
+                        data['columns'][j-1].append(value)
 
     return data
 
