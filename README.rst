@@ -36,6 +36,7 @@ Pandas
 - `How can we download fundamentals data with Python? <http://theautomatic.net/2020/05/05/how-to-download-fundamentals-data-with-python/>`_
 - `Pandas DataFrame (Python): 10 useful tricks <https://levelup.gitconnected.com/pandas-dataframe-python-10-useful-tricks-b4beae91df3d>`_
 - `Exploring the Best Tennis Players from the Last 2 Decades with Simple Pandas and Plot Visualizations Features <https://towardsdatascience.com/exploring-a-data-set-with-simple-pandas-and-plot-visualizations-features-73901ee76c6c>`_ 
+- `7 Useful Pandas Tips for Data Management <https://towardsdatascience.com/7-useful-pandas-tips-for-data-management-8b23a85bf41f>`_
 
 
 Others
