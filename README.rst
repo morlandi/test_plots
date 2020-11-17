@@ -15,6 +15,7 @@ Pyplot
 - `Pyplot tutorial <https://matplotlib.org/tutorials/introductory/pyplot.html>`_
 - `Python Plotting With Matplotlib (Guide) <https://realpython.com/python-matplotlib-guide/>`_
 - `Matplotlib: Tutorial for Python’s Powerful Data Visualization Tool <https://towardsdatascience.com/matplotlib-tutorial-with-code-for-pythons-powerful-data-visualization-tool-8ec458423c5e>`_
+- `An Introduction to Python Matplotlib with 40 Basic Examples <https://levelup.gitconnected.com/an-introduction-of-python-matplotlib-with-40-basic-examples-5174383a6889>`_
 
 Jupyter
 
